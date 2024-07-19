@@ -15,11 +15,8 @@
 		0722B20B2C4AABE700A2D595 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722B20A2C4AABE700A2D595 /* Environment.swift */; };
 		0722B20D2C4AAC5700A2D595 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722B20C2C4AAC5700A2D595 /* Endpoint.swift */; };
 		0738112D2C4839430062F775 /* Products_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0738112C2C4839430062F775 /* Products_iOSApp.swift */; };
-		0738112F2C4839430062F775 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0738112E2C4839430062F775 /* ContentView.swift */; };
 		073811312C4839450062F775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 073811302C4839450062F775 /* Assets.xcassets */; };
 		073811342C4839450062F775 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 073811332C4839450062F775 /* Preview Assets.xcassets */; };
-		073811362C4839450062F775 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073811352C4839450062F775 /* Persistence.swift */; };
-		073811392C4839450062F775 /* Products_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 073811372C4839450062F775 /* Products_iOS.xcdatamodeld */; };
 		073811432C4839450062F775 /* Products_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073811422C4839450062F775 /* Products_iOSTests.swift */; };
 		0738114D2C4839460062F775 /* Products_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0738114C2C4839460062F775 /* Products_iOSUITests.swift */; };
 		0738114F2C4839460062F775 /* Products_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0738114E2C4839460062F775 /* Products_iOSUITestsLaunchTests.swift */; };
@@ -27,6 +24,11 @@
 		0790514F2C4AC2AF00497E5F /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790514E2C4AC2AF00497E5F /* Requestable.swift */; };
 		079051512C4ACCAC00497E5F /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079051502C4ACCAC00497E5F /* RequestService.swift */; };
 		079051532C4ACFE000497E5F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079051522C4ACFE000497E5F /* NetworkError.swift */; };
+		079051572C4AD4E600497E5F /* ProductsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079051562C4AD4E600497E5F /* ProductsEndpoint.swift */; };
+		079051592C4AD4FD00497E5F /* ProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079051582C4AD4FD00497E5F /* ProductsService.swift */; };
+		0790515B2C4AD70800497E5F /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790515A2C4AD70800497E5F /* ProductModel.swift */; };
+		0790515E2C4AD96A00497E5F /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790515D2C4AD96A00497E5F /* ProductsView.swift */; };
+		079051602C4ADA5E00497E5F /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790515F2C4ADA5E00497E5F /* BaseResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +58,8 @@
 		0722B20C2C4AAC5700A2D595 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		073811292C4839430062F775 /* Products-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Products-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0738112C2C4839430062F775 /* Products_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products_iOSApp.swift; sourceTree = "<group>"; };
-		0738112E2C4839430062F775 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		073811302C4839450062F775 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		073811332C4839450062F775 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		073811352C4839450062F775 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		073811382C4839450062F775 /* Products_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Products_iOS.xcdatamodel; sourceTree = "<group>"; };
 		0738113E2C4839450062F775 /* Products-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Products-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		073811422C4839450062F775 /* Products_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products_iOSTests.swift; sourceTree = "<group>"; };
 		073811482C4839450062F775 /* Products-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Products-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +69,11 @@
 		0790514E2C4AC2AF00497E5F /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		079051502C4ACCAC00497E5F /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
 		079051522C4ACFE000497E5F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		079051562C4AD4E600497E5F /* ProductsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsEndpoint.swift; sourceTree = "<group>"; };
+		079051582C4AD4FD00497E5F /* ProductsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsService.swift; sourceTree = "<group>"; };
+		0790515A2C4AD70800497E5F /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		0790515D2C4AD96A00497E5F /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		0790515F2C4ADA5E00497E5F /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +121,8 @@
 		0722B1FC2C4A854F00A2D595 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				0722B2062C4A957F00A2D595 /* Remote */,
 				0722B1FD2C4A855700A2D595 /* Base */,
+				0722B2062C4A957F00A2D595 /* Remote */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -137,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				0722B2072C4A958900A2D595 /* Base */,
+				079051542C4AD47A00497E5F /* Service */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 				0790514E2C4AC2AF00497E5F /* Requestable.swift */,
 				079051502C4ACCAC00497E5F /* RequestService.swift */,
 				079051522C4ACFE000497E5F /* NetworkError.swift */,
+				0790515F2C4ADA5E00497E5F /* BaseResponse.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -179,12 +185,10 @@
 		0738112B2C4839430062F775 /* Products-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				0722B1FC2C4A854F00A2D595 /* Core */,
-				0722B1FB2C4A852900A2D595 /* Assets */,
 				0722B1FA2C4A84CA00A2D595 /* App */,
-				0738112E2C4839430062F775 /* ContentView.swift */,
-				073811352C4839450062F775 /* Persistence.swift */,
-				073811372C4839450062F775 /* Products_iOS.xcdatamodeld */,
+				0722B1FB2C4A852900A2D595 /* Assets */,
+				0790515C2C4AD95500497E5F /* Screens */,
+				0722B1FC2C4A854F00A2D595 /* Core */,
 			);
 			path = "Products-iOS";
 			sourceTree = "<group>";
@@ -212,6 +216,32 @@
 				0738114E2C4839460062F775 /* Products_iOSUITestsLaunchTests.swift */,
 			);
 			path = "Products-iOSUITests";
+			sourceTree = "<group>";
+		};
+		079051542C4AD47A00497E5F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				079051552C4AD4BD00497E5F /* Products */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		079051552C4AD4BD00497E5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				079051562C4AD4E600497E5F /* ProductsEndpoint.swift */,
+				079051582C4AD4FD00497E5F /* ProductsService.swift */,
+				0790515A2C4AD70800497E5F /* ProductModel.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		0790515C2C4AD95500497E5F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0790515D2C4AD96A00497E5F /* ProductsView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,18 +374,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				073811362C4839450062F775 /* Persistence.swift in Sources */,
 				0722B2052C4A8EC600A2D595 /* NetworkMonitor.swift in Sources */,
-				0738112F2C4839430062F775 /* ContentView.swift in Sources */,
 				0738112D2C4839430062F775 /* Products_iOSApp.swift in Sources */,
 				0722B2012C4A859300A2D595 /* BaseView.swift in Sources */,
 				0722B2032C4A89D400A2D595 /* BaseObservableViewModel.swift in Sources */,
+				079051572C4AD4E600497E5F /* ProductsEndpoint.swift in Sources */,
 				0722B2092C4AA4A000A2D595 /* Base.swift in Sources */,
 				079051512C4ACCAC00497E5F /* RequestService.swift in Sources */,
-				073811392C4839450062F775 /* Products_iOS.xcdatamodeld in Sources */,
 				079051532C4ACFE000497E5F /* NetworkError.swift in Sources */,
+				079051602C4ADA5E00497E5F /* BaseResponse.swift in Sources */,
 				0722B1FF2C4A858100A2D595 /* BaseNavigationView.swift in Sources */,
 				0722B20D2C4AAC5700A2D595 /* Endpoint.swift in Sources */,
+				0790515B2C4AD70800497E5F /* ProductModel.swift in Sources */,
+				079051592C4AD4FD00497E5F /* ProductsService.swift in Sources */,
+				0790515E2C4AD96A00497E5F /* ProductsView.swift in Sources */,
 				0790514F2C4AC2AF00497E5F /* Requestable.swift in Sources */,
 				0790514D2C4ABD7100497E5F /* NetworkRequest.swift in Sources */,
 				0722B20B2C4AABE700A2D595 /* Environment.swift in Sources */,
@@ -683,19 +715,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		073811372C4839450062F775 /* Products_iOS.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				073811382C4839450062F775 /* Products_iOS.xcdatamodel */,
-			);
-			currentVersion = 073811382C4839450062F775 /* Products_iOS.xcdatamodel */;
-			path = Products_iOS.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 073811212C4839430062F775 /* Project object */;
 }

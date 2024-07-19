@@ -41,13 +41,12 @@ public struct NetworkRequest {
     
     public init(path: String,
                 parameters: Parameters? = nil,
-                headers: [String : String],
                 requestBody: Any? = nil,
                 requestTimeOut: Float? = nil,
                 httpMethod: HTTPMethod) {
         self.path = path
         self.parameters = parameters
-        self.headers = headers
+        self.headers = ["Content-Type": "application/json"]
         self.requestBody = requestBody
         self.requestTimeOut = requestTimeOut
         self.httpMethod = httpMethod

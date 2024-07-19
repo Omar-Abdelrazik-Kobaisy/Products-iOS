@@ -9,5 +9,5 @@ import Foundation
 
 protocol RequestService{
     var networkService: Requestable {get}
-    var fetchEndpoint: RequestEndpoint {get set}
+    var fetchEndpoint: RequestEndpoint? {get set}
 }
