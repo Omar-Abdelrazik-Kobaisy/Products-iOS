@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0722B1FF2C4A858100A2D595 /* BaseNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722B1FE2C4A858100A2D595 /* BaseNavigationView.swift */; };
+		0722B2012C4A859300A2D595 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722B2002C4A859300A2D595 /* BaseView.swift */; };
+		0722B2032C4A89D400A2D595 /* BaseObservableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722B2022C4A89D400A2D595 /* BaseObservableViewModel.swift */; };
+		0722B2052C4A8EC600A2D595 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722B2042C4A8EC600A2D595 /* NetworkMonitor.swift */; };
 		0738112D2C4839430062F775 /* Products_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0738112C2C4839430062F775 /* Products_iOSApp.swift */; };
 		0738112F2C4839430062F775 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0738112E2C4839430062F775 /* ContentView.swift */; };
 		073811312C4839450062F775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 073811302C4839450062F775 /* Assets.xcassets */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0722B1FE2C4A858100A2D595 /* BaseNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationView.swift; sourceTree = "<group>"; };
+		0722B2002C4A859300A2D595 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		0722B2022C4A89D400A2D595 /* BaseObservableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseObservableViewModel.swift; sourceTree = "<group>"; };
+		0722B2042C4A8EC600A2D595 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		073811292C4839430062F775 /* Products-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Products-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0738112C2C4839430062F775 /* Products_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products_iOSApp.swift; sourceTree = "<group>"; };
 		0738112E2C4839430062F775 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +83,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0722B1FA2C4A84CA00A2D595 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0738112C2C4839430062F775 /* Products_iOSApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0722B1FB2C4A852900A2D595 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				073811302C4839450062F775 /* Assets.xcassets */,
+				073811322C4839450062F775 /* Preview Content */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0722B1FC2C4A854F00A2D595 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0722B2062C4A957F00A2D595 /* Remote */,
+				0722B1FD2C4A855700A2D595 /* Base */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0722B1FD2C4A855700A2D595 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0722B1FE2C4A858100A2D595 /* BaseNavigationView.swift */,
+				0722B2002C4A859300A2D595 /* BaseView.swift */,
+				0722B2022C4A89D400A2D595 /* BaseObservableViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0722B2062C4A957F00A2D595 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				0722B2072C4A958900A2D595 /* Base */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		0722B2072C4A958900A2D595 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0722B2042C4A8EC600A2D595 /* NetworkMonitor.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		073811202C4839430062F775 = {
 			isa = PBXGroup;
 			children = (
@@ -98,12 +158,12 @@
 		0738112B2C4839430062F775 /* Products-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				0738112C2C4839430062F775 /* Products_iOSApp.swift */,
+				0722B1FC2C4A854F00A2D595 /* Core */,
+				0722B1FB2C4A852900A2D595 /* Assets */,
+				0722B1FA2C4A84CA00A2D595 /* App */,
 				0738112E2C4839430062F775 /* ContentView.swift */,
-				073811302C4839450062F775 /* Assets.xcassets */,
 				073811352C4839450062F775 /* Persistence.swift */,
 				073811372C4839450062F775 /* Products_iOS.xcdatamodeld */,
-				073811322C4839450062F775 /* Preview Content */,
 			);
 			path = "Products-iOS";
 			sourceTree = "<group>";
@@ -264,9 +324,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				073811362C4839450062F775 /* Persistence.swift in Sources */,
+				0722B2052C4A8EC600A2D595 /* NetworkMonitor.swift in Sources */,
 				0738112F2C4839430062F775 /* ContentView.swift in Sources */,
 				0738112D2C4839430062F775 /* Products_iOSApp.swift in Sources */,
+				0722B2012C4A859300A2D595 /* BaseView.swift in Sources */,
+				0722B2032C4A89D400A2D595 /* BaseObservableViewModel.swift in Sources */,
 				073811392C4839450062F775 /* Products_iOS.xcdatamodeld in Sources */,
+				0722B1FF2C4A858100A2D595 /* BaseNavigationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +488,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Products-iOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Products-iOS/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = UQ2YS6389U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -453,7 +517,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Products-iOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Products-iOS/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = UQ2YS6389U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
