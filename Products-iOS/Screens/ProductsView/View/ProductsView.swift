@@ -8,8 +8,31 @@
 import SwiftUI
 
 struct ProductsView: View {
+    @StateObject private var viewModel: ProductsViewModel
+    var columns: [GridItem] = Array(repeating: .init(.flexible(), spacing: 8), count: 2)
+    
+    private var content: some View{VStack{
+        SearchBarView(text: .constant(""))
+            .padding(.bottom)
+        ScrollView(showsIndicators: false) {
+            LazyVGrid(columns: columns, alignment: .center,spacing: 10) {
+                ForEach(viewModel.products) { product in
+                    ProductCard(product: product,
+                                onAddToCartPressed: {
+                        viewModel.successMessage = "Added Successfully"
+                    })
+                }
+            }
+        }
+    }
+    }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        BaseNavigationView {
+            content
+        }
+    }
+    init() {
+        self._viewModel = StateObject(wrappedValue: ProductsViewModel(productsService: ProductsService()))
     }
 }
 
