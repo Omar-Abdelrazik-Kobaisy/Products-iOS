@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ProductCard: View {
     let product: ProductModel
-    
+    @State private var isFavourite: Bool = false
+    let onAddToCartPressed: () -> ()
     var body: some View {
         VStack {
             AsyncImage(url: URL(string: product.thumbnail)) { image in
@@ -25,10 +26,10 @@ struct ProductCard: View {
             }
             .overlay(alignment: .topTrailing) {
                 Button {
-                    
+                    isFavourite.toggle()
                 } label: {
                     Image(systemName: "heart.circle.fill")
-                        .foregroundStyle(.white, .blue)
+                        .foregroundStyle(.white, isFavourite ? .red : .blue)
                         .font(.system(size: 25))
                         .shadow(radius: 10)
                         .padding()
@@ -54,7 +55,7 @@ struct ProductCard: View {
                     Text("Review (\(product.rating.asNumberString()))⭐️")
                         .frame(maxWidth: .infinity,alignment: .leading)
                     Button {
-                        
+                        onAddToCartPressed()
                     } label: {
                         Image(systemName: "plus.circle.fill")
                             .font(.system(size: 25))
@@ -77,6 +78,6 @@ struct ProductCard: View {
 
 struct ProductCard_Previews: PreviewProvider {
     static var previews: some View {
-        ProductCard(product: dev.fetchProducts().first!)
+        ProductCard(product: dev.fetchProducts().first!,onAddToCartPressed: {})
     }
 }
