@@ -25,6 +25,7 @@
 		073811432C4839450062F775 /* Products_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073811422C4839450062F775 /* Products_iOSTests.swift */; };
 		0738114D2C4839460062F775 /* Products_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0738114C2C4839460062F775 /* Products_iOSUITests.swift */; };
 		0738114F2C4839460062F775 /* Products_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0738114E2C4839460062F775 /* Products_iOSUITestsLaunchTests.swift */; };
+		07849E732C4BD591008B3F08 /* LoadingIndecator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07849E722C4BD591008B3F08 /* LoadingIndecator.swift */; };
 		0790514D2C4ABD7100497E5F /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790514C2C4ABD7100497E5F /* NetworkRequest.swift */; };
 		0790514F2C4AC2AF00497E5F /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790514E2C4AC2AF00497E5F /* Requestable.swift */; };
 		079051512C4ACCAC00497E5F /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079051502C4ACCAC00497E5F /* RequestService.swift */; };
@@ -77,6 +78,7 @@
 		073811482C4839450062F775 /* Products-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Products-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0738114C2C4839460062F775 /* Products_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products_iOSUITests.swift; sourceTree = "<group>"; };
 		0738114E2C4839460062F775 /* Products_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		07849E722C4BD591008B3F08 /* LoadingIndecator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndecator.swift; sourceTree = "<group>"; };
 		0790514C2C4ABD7100497E5F /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		0790514E2C4AC2AF00497E5F /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		079051502C4ACCAC00497E5F /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				073094752C4BC93E00F48548 /* ToastView.swift */,
+				07849E722C4BD591008B3F08 /* LoadingIndecator.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 				0738112D2C4839430062F775 /* Products_iOSApp.swift in Sources */,
 				079051682C4AE70600497E5F /* Preview+Extention.swift in Sources */,
 				0722B2012C4A859300A2D595 /* BaseView.swift in Sources */,
+				07849E732C4BD591008B3F08 /* LoadingIndecator.swift in Sources */,
 				0722B2032C4A89D400A2D595 /* BaseObservableViewModel.swift in Sources */,
 				079051572C4AD4E600497E5F /* ProductsEndpoint.swift in Sources */,
 				079051652C4ADDF800497E5F /* ProductCard.swift in Sources */,

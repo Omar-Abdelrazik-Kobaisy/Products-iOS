@@ -11,8 +11,9 @@ struct ProductsView: View {
     @StateObject private var viewModel: ProductsViewModel
     var columns: [GridItem] = Array(repeating: .init(.flexible(), spacing: 8), count: 2)
     
-    private var content: some View{VStack{
-        SearchBarView(text: .constant(""))
+    private var content: some View{
+        VStack{
+            SearchBarView(text: $viewModel.searchProductName)
             .padding(.bottom)
         ScrollView(showsIndicators: false) {
             LazyVGrid(columns: columns, alignment: .center,spacing: 10) {
@@ -29,6 +30,7 @@ struct ProductsView: View {
     var body: some View {
         BaseNavigationView {
             content
+                .showLoadingIndecator(isLoading: $viewModel.isLoading)
                 .showConnectionToast(isPresented: $viewModel.showConnectionError,
                                      errorMessage: viewModel.connectionErrorMessage,
                                      onConnectionRestore: {
