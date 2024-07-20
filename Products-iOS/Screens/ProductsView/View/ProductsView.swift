@@ -29,6 +29,15 @@ struct ProductsView: View {
     var body: some View {
         BaseNavigationView {
             content
+                .showConnectionToast(isPresented: $viewModel.showConnectionError,
+                                     errorMessage: viewModel.connectionErrorMessage,
+                                     onConnectionRestore: {
+                    viewModel.fetchProducts()
+                })
+                .showSuccessToast(isPresented: $viewModel.showSuccess,
+                                  successMessage: viewModel.successMessage)
+                .showErrorToast(isPresented: $viewModel.showError,
+                                errorMessage: viewModel.errorMessage)
         }
     }
     init() {
