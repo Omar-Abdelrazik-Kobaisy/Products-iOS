@@ -22,7 +22,7 @@ final class ProductsViewModel: BaseObservableViewModel{
 }
 
 extension ProductsViewModel{
-    private func fetchProducts(){
+    func fetchProducts(){
         isLoading = true
         productsService.fetchProducts()
             .receive(on: RunLoop.main)
