@@ -6,15 +6,15 @@
 * [Example Demo](#example-demo)
 
  # Technologies
- * Tools
+ ## Tools
 - XCode 14.1
- * ProgrammingLanguage
+## ProgrammingLanguage
 - Swift programming language
- * Design Pattern
+ ## Design Pattern
 - MVVM Design Pattern
- * FrameWork
+## FrameWork
 - SwiftUI & Combine
- * Packages
+## Packages
 - SSToastMessage
 
 # Future improvements
