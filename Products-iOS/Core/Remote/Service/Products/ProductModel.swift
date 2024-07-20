@@ -8,13 +8,13 @@
 import Foundation
 
 // MARK: - ProductModel
-struct ProductModel: Codable {
+struct ProductModel: Codable, Identifiable {
     let id: Int
     let title, description, category: String
     let price, discountPercentage, rating: Double
     let stock: Int
     let tags: [String]
-    let brand, sku: String
+    let brand, sku: String?
     let weight: Int
     let dimensions: Dimensions
     let warrantyInformation, shippingInformation, availabilityStatus: String
@@ -24,6 +24,9 @@ struct ProductModel: Codable {
     let meta: Meta
     let images: [String]
     let thumbnail: String
+    var priceAfterDiscount: Double{
+        price - ((price * discountPercentage)/100)
+    }
 }
 
 // MARK: - Dimensions
