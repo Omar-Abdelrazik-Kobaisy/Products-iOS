@@ -13,6 +13,7 @@ struct BaseView<Content: View>: View {
         ZStack {
             BaseBackgroundView()
             content()
+                .padding(.horizontal,5)
         }
     }
 }

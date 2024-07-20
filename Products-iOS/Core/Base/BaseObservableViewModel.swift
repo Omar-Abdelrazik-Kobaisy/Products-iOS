@@ -59,7 +59,7 @@ extension BaseObservableViewModel{
 }
 
 extension BaseObservableViewModel{
-    public func onReceive(_ completion: Subscribers.Completion<Error>){
+    public func onReceive(_ completion: Subscribers.Completion<NetworkError>){
         switch completion {
         case .failure(let error):
             errorMessage = error.localizedDescription
