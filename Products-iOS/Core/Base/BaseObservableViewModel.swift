@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import NetworkingKit
 
 class BaseObservableViewModel: ObservableObject{
     @Published var networkMonitor = NetworkMonitor()

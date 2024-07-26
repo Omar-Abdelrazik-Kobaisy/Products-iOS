@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import NetworkingKit
 
 final class ProductsViewModel: BaseObservableViewModel{
     @Published private(set) var products = Array<ProductModel>()

@@ -6,8 +6,9 @@
 //
 
 import Foundation
-
+import NetworkingKit
 enum ProductsEndpoint: RequestEndpoint{
+    
     case getProducts
     
     var path: String{
