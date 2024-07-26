@@ -10,10 +10,6 @@
 		0722B1FF2C4A858100A2D595 /* BaseNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722B1FE2C4A858100A2D595 /* BaseNavigationView.swift */; };
 		0722B2012C4A859300A2D595 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722B2002C4A859300A2D595 /* BaseView.swift */; };
 		0722B2032C4A89D400A2D595 /* BaseObservableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722B2022C4A89D400A2D595 /* BaseObservableViewModel.swift */; };
-		0722B2052C4A8EC600A2D595 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722B2042C4A8EC600A2D595 /* NetworkMonitor.swift */; };
-		0722B2092C4AA4A000A2D595 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722B2082C4AA4A000A2D595 /* Base.swift */; };
-		0722B20B2C4AABE700A2D595 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722B20A2C4AABE700A2D595 /* Environment.swift */; };
-		0722B20D2C4AAC5700A2D595 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722B20C2C4AAC5700A2D595 /* Endpoint.swift */; };
 		0730946A2C4BA03C00F48548 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073094692C4BA03C00F48548 /* Double+Ext.swift */; };
 		0730946C2C4BB64200F48548 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730946B2C4BB64200F48548 /* SearchBarView.swift */; };
 		0730946E2C4BB85700F48548 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730946D2C4BB85700F48548 /* UIApplication.swift */; };
@@ -25,16 +21,12 @@
 		073811432C4839450062F775 /* Products_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073811422C4839450062F775 /* Products_iOSTests.swift */; };
 		0738114D2C4839460062F775 /* Products_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0738114C2C4839460062F775 /* Products_iOSUITests.swift */; };
 		0738114F2C4839460062F775 /* Products_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0738114E2C4839460062F775 /* Products_iOSUITestsLaunchTests.swift */; };
+		077C291C2C53AC2A0027C032 /* oAmNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 077C291B2C53AC2A0027C032 /* oAmNetworking */; };
 		07849E732C4BD591008B3F08 /* LoadingIndecator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07849E722C4BD591008B3F08 /* LoadingIndecator.swift */; };
-		0790514D2C4ABD7100497E5F /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790514C2C4ABD7100497E5F /* NetworkRequest.swift */; };
-		0790514F2C4AC2AF00497E5F /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790514E2C4AC2AF00497E5F /* Requestable.swift */; };
-		079051512C4ACCAC00497E5F /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079051502C4ACCAC00497E5F /* RequestService.swift */; };
-		079051532C4ACFE000497E5F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079051522C4ACFE000497E5F /* NetworkError.swift */; };
 		079051572C4AD4E600497E5F /* ProductsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079051562C4AD4E600497E5F /* ProductsEndpoint.swift */; };
 		079051592C4AD4FD00497E5F /* ProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079051582C4AD4FD00497E5F /* ProductsService.swift */; };
 		0790515B2C4AD70800497E5F /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790515A2C4AD70800497E5F /* ProductModel.swift */; };
 		0790515E2C4AD96A00497E5F /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790515D2C4AD96A00497E5F /* ProductsView.swift */; };
-		079051602C4ADA5E00497E5F /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790515F2C4ADA5E00497E5F /* BaseResponse.swift */; };
 		079051652C4ADDF800497E5F /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079051642C4ADDF800497E5F /* ProductCard.swift */; };
 		079051682C4AE70600497E5F /* Preview+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079051672C4AE70600497E5F /* Preview+Extention.swift */; };
 		0790516B2C4B12AA00497E5F /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790516A2C4B12AA00497E5F /* ProductsViewModel.swift */; };
@@ -61,10 +53,6 @@
 		0722B1FE2C4A858100A2D595 /* BaseNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationView.swift; sourceTree = "<group>"; };
 		0722B2002C4A859300A2D595 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		0722B2022C4A89D400A2D595 /* BaseObservableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseObservableViewModel.swift; sourceTree = "<group>"; };
-		0722B2042C4A8EC600A2D595 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
-		0722B2082C4AA4A000A2D595 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
-		0722B20A2C4AABE700A2D595 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		0722B20C2C4AAC5700A2D595 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		073094692C4BA03C00F48548 /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
 		0730946B2C4BB64200F48548 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		0730946D2C4BB85700F48548 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
@@ -79,15 +67,10 @@
 		0738114C2C4839460062F775 /* Products_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products_iOSUITests.swift; sourceTree = "<group>"; };
 		0738114E2C4839460062F775 /* Products_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		07849E722C4BD591008B3F08 /* LoadingIndecator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndecator.swift; sourceTree = "<group>"; };
-		0790514C2C4ABD7100497E5F /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
-		0790514E2C4AC2AF00497E5F /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
-		079051502C4ACCAC00497E5F /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
-		079051522C4ACFE000497E5F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		079051562C4AD4E600497E5F /* ProductsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsEndpoint.swift; sourceTree = "<group>"; };
 		079051582C4AD4FD00497E5F /* ProductsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsService.swift; sourceTree = "<group>"; };
 		0790515A2C4AD70800497E5F /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		0790515D2C4AD96A00497E5F /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
-		0790515F2C4ADA5E00497E5F /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		079051642C4ADDF800497E5F /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
 		079051672C4AE70600497E5F /* Preview+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Preview+Extention.swift"; sourceTree = "<group>"; };
 		0790516A2C4B12AA00497E5F /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
@@ -98,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				077C291C2C53AC2A0027C032 /* oAmNetworking in Frameworks */,
 				073094712C4BBD6200F48548 /* SSToastMessage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,26 +142,9 @@
 		0722B2062C4A957F00A2D595 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
-				0722B2072C4A958900A2D595 /* Base */,
 				079051542C4AD47A00497E5F /* Service */,
 			);
 			path = Remote;
-			sourceTree = "<group>";
-		};
-		0722B2072C4A958900A2D595 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				0722B2042C4A8EC600A2D595 /* NetworkMonitor.swift */,
-				0722B2082C4AA4A000A2D595 /* Base.swift */,
-				0722B20A2C4AABE700A2D595 /* Environment.swift */,
-				0722B20C2C4AAC5700A2D595 /* Endpoint.swift */,
-				0790514C2C4ABD7100497E5F /* NetworkRequest.swift */,
-				0790514E2C4AC2AF00497E5F /* Requestable.swift */,
-				079051502C4ACCAC00497E5F /* RequestService.swift */,
-				079051522C4ACFE000497E5F /* NetworkError.swift */,
-				0790515F2C4ADA5E00497E5F /* BaseResponse.swift */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		073094722C4BBDC700F48548 /* ViewComponents */ = {
@@ -336,6 +303,7 @@
 			name = "Products-iOS";
 			packageProductDependencies = (
 				073094702C4BBD6200F48548 /* SSToastMessage */,
+				077C291B2C53AC2A0027C032 /* oAmNetworking */,
 			);
 			productName = "Products-iOS";
 			productReference = 073811292C4839430062F775 /* Products-iOS.app */;
@@ -411,6 +379,7 @@
 			mainGroup = 073811202C4839430062F775;
 			packageReferences = (
 				0730946F2C4BBD6100F48548 /* XCRemoteSwiftPackageReference "SSToastMessage" */,
+				077C291A2C53AC2A0027C032 /* XCRemoteSwiftPackageReference "oAmNetworking" */,
 			);
 			productRefGroup = 0738112A2C4839430062F775 /* Products */;
 			projectDirPath = "";
@@ -455,7 +424,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0730946E2C4BB85700F48548 /* UIApplication.swift in Sources */,
-				0722B2052C4A8EC600A2D595 /* NetworkMonitor.swift in Sources */,
 				0738112D2C4839430062F775 /* Products_iOSApp.swift in Sources */,
 				079051682C4AE70600497E5F /* Preview+Extention.swift in Sources */,
 				0722B2012C4A859300A2D595 /* BaseView.swift in Sources */,
@@ -463,22 +431,14 @@
 				0722B2032C4A89D400A2D595 /* BaseObservableViewModel.swift in Sources */,
 				079051572C4AD4E600497E5F /* ProductsEndpoint.swift in Sources */,
 				079051652C4ADDF800497E5F /* ProductCard.swift in Sources */,
-				0722B2092C4AA4A000A2D595 /* Base.swift in Sources */,
-				079051512C4ACCAC00497E5F /* RequestService.swift in Sources */,
-				079051532C4ACFE000497E5F /* NetworkError.swift in Sources */,
-				079051602C4ADA5E00497E5F /* BaseResponse.swift in Sources */,
 				0730946A2C4BA03C00F48548 /* Double+Ext.swift in Sources */,
 				0722B1FF2C4A858100A2D595 /* BaseNavigationView.swift in Sources */,
-				0722B20D2C4AAC5700A2D595 /* Endpoint.swift in Sources */,
 				0790515B2C4AD70800497E5F /* ProductModel.swift in Sources */,
 				079051592C4AD4FD00497E5F /* ProductsService.swift in Sources */,
 				0790515E2C4AD96A00497E5F /* ProductsView.swift in Sources */,
-				0790514F2C4AC2AF00497E5F /* Requestable.swift in Sources */,
 				0730946C2C4BB64200F48548 /* SearchBarView.swift in Sources */,
-				0790514D2C4ABD7100497E5F /* NetworkRequest.swift in Sources */,
 				0790516B2C4B12AA00497E5F /* ProductsViewModel.swift in Sources */,
 				073094762C4BC93E00F48548 /* ToastView.swift in Sources */,
-				0722B20B2C4AABE700A2D595 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -813,6 +773,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		077C291A2C53AC2A0027C032 /* XCRemoteSwiftPackageReference "oAmNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Omar-Abdelrazik-Kobaisy/oAmNetworking";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -820,6 +788,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0730946F2C4BBD6100F48548 /* XCRemoteSwiftPackageReference "SSToastMessage" */;
 			productName = SSToastMessage;
+		};
+		077C291B2C53AC2A0027C032 /* oAmNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 077C291A2C53AC2A0027C032 /* XCRemoteSwiftPackageReference "oAmNetworking" */;
+			productName = oAmNetworking;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

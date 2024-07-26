@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import oAmNetworking
 enum ProductsEndpoint: RequestEndpoint{
     case getProducts
     
