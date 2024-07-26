@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import oAmNetworking
 
 protocol ProductsServiceProtocol: RequestService{
     func fetchProducts() -> AnyPublisher<BaseResponse<Array<ProductModel>>,NetworkError>

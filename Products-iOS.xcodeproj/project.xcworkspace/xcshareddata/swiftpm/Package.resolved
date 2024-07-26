@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "oamnetworking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Omar-Abdelrazik-Kobaisy/oAmNetworking",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6a55d8a9510fe761c495ff582a3231cbdcef5fa3"
+      }
+    },
+    {
       "identity" : "sstoastmessage",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SimformSolutionsPvtLtd/SSToastMessage.git",
