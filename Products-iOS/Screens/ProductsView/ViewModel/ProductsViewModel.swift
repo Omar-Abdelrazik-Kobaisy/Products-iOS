@@ -28,6 +28,7 @@ final class ProductsViewModel: BaseObservableViewModel{
 extension ProductsViewModel{
     func searchForProduct(){
         $searchProductName
+            .dropFirst(2)
             .debounce(for: .seconds(1), scheduler: DispatchQueue.main)
             .sink(receiveValue: {[weak self] searchText in
                 print(searchText)
@@ -45,7 +46,7 @@ extension ProductsViewModel{
 }
 
 extension ProductsViewModel{
-    func fetchProducts(){
+    private func fetchProducts(){
         isLoading = true
         productsService.fetchProducts()
             .receive(on: RunLoop.main)

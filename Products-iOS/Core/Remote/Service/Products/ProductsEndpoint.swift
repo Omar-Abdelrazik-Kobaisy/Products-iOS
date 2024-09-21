@@ -32,7 +32,8 @@ enum ProductsEndpoint: RequestEndpoint{
     }
     
     func createRequest() -> NetworkRequest {
-        NetworkRequest(path: path,
+        NetworkRequest(baseDomain: baseDomain,
+                       path: path,
                        httpMethod: httpMethod)
     }
     

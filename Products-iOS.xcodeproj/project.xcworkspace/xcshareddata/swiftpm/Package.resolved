@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Omar-Abdelrazik-Kobaisy/oAmNetworking",
       "state" : {
-        "branch" : "main",
-        "revision" : "6a55d8a9510fe761c495ff582a3231cbdcef5fa3"
+        "revision" : "d35822ea22a71d58d9a1de6446deeedc4fcfb03d",
+        "version" : "1.1.0"
       }
     },
     {

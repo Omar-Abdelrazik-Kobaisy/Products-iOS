@@ -34,7 +34,7 @@ struct ProductsView: View {
                 .showConnectionToast(isPresented: $viewModel.showConnectionError,
                                      errorMessage: viewModel.connectionErrorMessage,
                                      onConnectionRestore: {
-                    viewModel.fetchProducts()
+//                    viewModel.fetchProducts()
                 })
                 .showSuccessToast(isPresented: $viewModel.showSuccess,
                                   successMessage: viewModel.successMessage)
