@@ -10,6 +10,7 @@
 		0722B1FF2C4A858100A2D595 /* BaseNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722B1FE2C4A858100A2D595 /* BaseNavigationView.swift */; };
 		0722B2012C4A859300A2D595 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722B2002C4A859300A2D595 /* BaseView.swift */; };
 		0722B2032C4A89D400A2D595 /* BaseObservableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722B2022C4A89D400A2D595 /* BaseObservableViewModel.swift */; };
+		07306D4D2CCD71260081D6CC /* PersistentLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 07306D4C2CCD71260081D6CC /* PersistentLayer */; };
 		0730946A2C4BA03C00F48548 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073094692C4BA03C00F48548 /* Double+Ext.swift */; };
 		0730946C2C4BB64200F48548 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730946B2C4BB64200F48548 /* SearchBarView.swift */; };
 		0730946E2C4BB85700F48548 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730946D2C4BB85700F48548 /* UIApplication.swift */; };
@@ -31,6 +32,7 @@
 		079051652C4ADDF800497E5F /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079051642C4ADDF800497E5F /* ProductCard.swift */; };
 		079051682C4AE70600497E5F /* Preview+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079051672C4AE70600497E5F /* Preview+Extention.swift */; };
 		0790516B2C4B12AA00497E5F /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790516A2C4B12AA00497E5F /* ProductsViewModel.swift */; };
+		07DCC0A82CCD70EB004833A8 /* Products.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07DCC0A62CCD70EB004833A8 /* Products.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		079051642C4ADDF800497E5F /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
 		079051672C4AE70600497E5F /* Preview+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Preview+Extention.swift"; sourceTree = "<group>"; };
 		0790516A2C4B12AA00497E5F /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		07DCC0A42CCD7034004833A8 /* PersistentLayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PersistentLayer; path = ../../../../xCodeProjects/PersistentLayer; sourceTree = "<group>"; };
+		07DCC0A72CCD70EB004833A8 /* Products.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Products.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			files = (
 				077C291C2C53AC2A0027C032 /* oAmNetworking in Frameworks */,
 				073094712C4BBD6200F48548 /* SSToastMessage in Frameworks */,
+				07306D4D2CCD71260081D6CC /* PersistentLayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 		0722B1FC2C4A854F00A2D595 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				07DCC0A52CCD70AC004833A8 /* Persistent */,
 				0722B1FD2C4A855700A2D595 /* Base */,
 				0722B2062C4A957F00A2D595 /* Remote */,
 			);
@@ -149,6 +155,13 @@
 			path = Remote;
 			sourceTree = "<group>";
 		};
+		07306D4B2CCD71260081D6CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		073094722C4BBDC700F48548 /* ViewComponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,10 +174,12 @@
 		073811202C4839430062F775 = {
 			isa = PBXGroup;
 			children = (
+				07DCC0A42CCD7034004833A8 /* PersistentLayer */,
 				0738112B2C4839430062F775 /* Products-iOS */,
 				073811412C4839450062F775 /* Products-iOSTests */,
 				0738114B2C4839460062F775 /* Products-iOSUITests */,
 				0738112A2C4839430062F775 /* Products */,
+				07306D4B2CCD71260081D6CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,6 +303,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		07DCC0A52CCD70AC004833A8 /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				07DCC0A62CCD70EB004833A8 /* Products.xcdatamodeld */,
+			);
+			path = Persistent;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,6 +330,7 @@
 			packageProductDependencies = (
 				073094702C4BBD6200F48548 /* SSToastMessage */,
 				077C291B2C53AC2A0027C032 /* oAmNetworking */,
+				07306D4C2CCD71260081D6CC /* PersistentLayer */,
 			);
 			productName = "Products-iOS";
 			productReference = 073811292C4839430062F775 /* Products-iOS.app */;
@@ -431,6 +455,7 @@
 				079051682C4AE70600497E5F /* Preview+Extention.swift in Sources */,
 				0722B2012C4A859300A2D595 /* BaseView.swift in Sources */,
 				07849E732C4BD591008B3F08 /* LoadingIndecator.swift in Sources */,
+				07DCC0A82CCD70EB004833A8 /* Products.xcdatamodeld in Sources */,
 				0722B2032C4A89D400A2D595 /* BaseObservableViewModel.swift in Sources */,
 				079051572C4AD4E600497E5F /* ProductsEndpoint.swift in Sources */,
 				079051652C4ADDF800497E5F /* ProductCard.swift in Sources */,
@@ -788,6 +813,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		07306D4C2CCD71260081D6CC /* PersistentLayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PersistentLayer;
+		};
 		073094702C4BBD6200F48548 /* SSToastMessage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0730946F2C4BBD6100F48548 /* XCRemoteSwiftPackageReference "SSToastMessage" */;
@@ -799,6 +828,19 @@
 			productName = oAmNetworking;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		07DCC0A62CCD70EB004833A8 /* Products.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				07DCC0A72CCD70EB004833A8 /* Products.xcdatamodel */,
+			);
+			currentVersion = 07DCC0A72CCD70EB004833A8 /* Products.xcdatamodel */;
+			path = Products.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 073811212C4839430062F775 /* Project object */;
 }
