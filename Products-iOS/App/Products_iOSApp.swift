@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import PersistentLayer
 
 @main
 struct Products_iOSApp: App {
+    private let persistentController = CoreDataProvider.shared
     var body: some Scene {
         WindowGroup {
             ProductsView()
+                .environment(\.managedObjectContext, persistentController.viewContext)
         }
     }
 }

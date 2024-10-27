@@ -21,6 +21,8 @@
 		073811432C4839450062F775 /* Products_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073811422C4839450062F775 /* Products_iOSTests.swift */; };
 		0738114D2C4839460062F775 /* Products_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0738114C2C4839460062F775 /* Products_iOSUITests.swift */; };
 		0738114F2C4839460062F775 /* Products_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0738114E2C4839460062F775 /* Products_iOSUITestsLaunchTests.swift */; };
+		073883702CCEB63200B6865D /* PersistentLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 0738836F2CCEB63200B6865D /* PersistentLayer */; };
+		073883742CCEB67800B6865D /* Products.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 073883722CCEB67800B6865D /* Products.xcdatamodeld */; };
 		0754466C2C5E690800A1CB21 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0754466B2C5E690800A1CB21 /* Environment.swift */; };
 		077C291C2C53AC2A0027C032 /* oAmNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 077C291B2C53AC2A0027C032 /* oAmNetworking */; };
 		07849E732C4BD591008B3F08 /* LoadingIndecator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07849E722C4BD591008B3F08 /* LoadingIndecator.swift */; };
@@ -67,6 +69,8 @@
 		073811482C4839450062F775 /* Products-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Products-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0738114C2C4839460062F775 /* Products_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products_iOSUITests.swift; sourceTree = "<group>"; };
 		0738114E2C4839460062F775 /* Products_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0738836D2CCEB60D00B6865D /* PersistentLayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PersistentLayer; sourceTree = "<group>"; };
+		073883732CCEB67800B6865D /* Products.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Products.xcdatamodel; sourceTree = "<group>"; };
 		0754466B2C5E690800A1CB21 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		07849E722C4BD591008B3F08 /* LoadingIndecator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndecator.swift; sourceTree = "<group>"; };
 		079051562C4AD4E600497E5F /* ProductsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsEndpoint.swift; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 			files = (
 				077C291C2C53AC2A0027C032 /* oAmNetworking in Frameworks */,
 				073094712C4BBD6200F48548 /* SSToastMessage in Frameworks */,
+				073883702CCEB63200B6865D /* PersistentLayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 		0722B1FC2C4A854F00A2D595 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				073883712CCEB64600B6865D /* Persistent */,
 				0722B1FD2C4A855700A2D595 /* Base */,
 				0722B2062C4A957F00A2D595 /* Remote */,
 			);
@@ -161,10 +167,12 @@
 		073811202C4839430062F775 = {
 			isa = PBXGroup;
 			children = (
+				0738836D2CCEB60D00B6865D /* PersistentLayer */,
 				0738112B2C4839430062F775 /* Products-iOS */,
 				073811412C4839450062F775 /* Products-iOSTests */,
 				0738114B2C4839460062F775 /* Products-iOSUITests */,
 				0738112A2C4839430062F775 /* Products */,
+				0738836E2CCEB63200B6865D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -214,6 +222,21 @@
 				0738114E2C4839460062F775 /* Products_iOSUITestsLaunchTests.swift */,
 			);
 			path = "Products-iOSUITests";
+			sourceTree = "<group>";
+		};
+		0738836E2CCEB63200B6865D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		073883712CCEB64600B6865D /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				073883722CCEB67800B6865D /* Products.xcdatamodeld */,
+			);
+			path = Persistent;
 			sourceTree = "<group>";
 		};
 		079051542C4AD47A00497E5F /* Service */ = {
@@ -307,6 +330,7 @@
 			packageProductDependencies = (
 				073094702C4BBD6200F48548 /* SSToastMessage */,
 				077C291B2C53AC2A0027C032 /* oAmNetworking */,
+				0738836F2CCEB63200B6865D /* PersistentLayer */,
 			);
 			productName = "Products-iOS";
 			productReference = 073811292C4839430062F775 /* Products-iOS.app */;
@@ -431,6 +455,7 @@
 				079051682C4AE70600497E5F /* Preview+Extention.swift in Sources */,
 				0722B2012C4A859300A2D595 /* BaseView.swift in Sources */,
 				07849E732C4BD591008B3F08 /* LoadingIndecator.swift in Sources */,
+				073883742CCEB67800B6865D /* Products.xcdatamodeld in Sources */,
 				0722B2032C4A89D400A2D595 /* BaseObservableViewModel.swift in Sources */,
 				079051572C4AD4E600497E5F /* ProductsEndpoint.swift in Sources */,
 				079051652C4ADDF800497E5F /* ProductCard.swift in Sources */,
@@ -793,12 +818,29 @@
 			package = 0730946F2C4BBD6100F48548 /* XCRemoteSwiftPackageReference "SSToastMessage" */;
 			productName = SSToastMessage;
 		};
+		0738836F2CCEB63200B6865D /* PersistentLayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PersistentLayer;
+		};
 		077C291B2C53AC2A0027C032 /* oAmNetworking */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 077C291A2C53AC2A0027C032 /* XCRemoteSwiftPackageReference "oAmNetworking" */;
 			productName = oAmNetworking;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		073883722CCEB67800B6865D /* Products.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				073883732CCEB67800B6865D /* Products.xcdatamodel */,
+			);
+			currentVersion = 073883732CCEB67800B6865D /* Products.xcdatamodel */;
+			path = Products.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 073811212C4839430062F775 /* Project object */;
 }

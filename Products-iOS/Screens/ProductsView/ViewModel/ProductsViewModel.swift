@@ -7,6 +7,7 @@
 
 import Foundation
 import oAmNetworking
+import PersistentLayer
 
 final class ProductsViewModel: BaseObservableViewModel{
     @Published private(set) var products = Array<ProductModel>()
@@ -15,11 +16,15 @@ final class ProductsViewModel: BaseObservableViewModel{
     
     //MARK: Service
     private let productsService: ProductsServiceProtocol
+    private let provider = CoreDataProvider.shared
+    private let coreDataService: CoreDataServices<ProductEntity>
     
     init(productsService: ProductsServiceProtocol){
         self.productsService = productsService
+        self.coreDataService = CoreDataServices<ProductEntity>(context: provider.backgroundContext)
         super.init()
-        fetchProducts()
+//        fetchProducts()
+        fetchAllProductsFromCoreData()
         searchForProduct()
     }
     
@@ -61,6 +66,27 @@ extension ProductsViewModel{
         }
         products = productList
         fetchedProducts = productList
+        for producut in productList {
+            do{
+                try coreDataService.create(producut.toEntity(context: provider.backgroundContext))
+            }catch{
+                print(error as! CoreDataError)
+            }
+        }
         isLoading = false
+    }
+}
+
+extension ProductsViewModel{
+    func fetchAllProductsFromCoreData(){
+        do{
+            let productsEntities = try coreDataService.readAll()
+            for productEntity in productsEntities{
+                products.append(ProductModel(entity: productEntity))
+            }
+        }catch{
+            print(error as! CoreDataError)
+        }
+        
     }
 }
