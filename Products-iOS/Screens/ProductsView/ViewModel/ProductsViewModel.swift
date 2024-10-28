@@ -21,7 +21,7 @@ final class ProductsViewModel: BaseObservableViewModel{
     
     init(productsService: ProductsServiceProtocol){
         self.productsService = productsService
-        self.coreDataService = CoreDataServices<ProductEntity>(context: provider.backgroundContext)
+        self.coreDataService = CoreDataServices<ProductEntity>(provider: provider)
         super.init()
 //        fetchProducts()
         fetchAllProductsFromCoreData()
@@ -43,7 +43,7 @@ extension ProductsViewModel{
                     })
                 self.products = filteredProducts
                 if searchText.isEmpty{
-                    self.fetchProducts()
+//                    self.fetchProducts()
                 }
             })
             .store(in: &cancellables)
@@ -68,7 +68,7 @@ extension ProductsViewModel{
         fetchedProducts = productList
         for producut in productList {
             do{
-                try coreDataService.create(producut.toEntity(context: provider.backgroundContext))
+                try coreDataService.create(producut.toEntity(context: provider.viewContext))
             }catch{
                 print(error as! CoreDataError)
             }

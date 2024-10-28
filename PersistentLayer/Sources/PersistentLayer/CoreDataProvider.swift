@@ -11,7 +11,7 @@ import SwiftUI
 
 final public class CoreDataProvider{
     public static let shared = CoreDataProvider()
-    private var container: NSPersistentContainer
+    var container: NSPersistentContainer
     
     public init(modelName: String = "Products") {
         container = NSPersistentContainer(name: modelName)

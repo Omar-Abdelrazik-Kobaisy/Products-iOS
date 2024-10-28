@@ -17,9 +17,11 @@ public protocol CoreDataServicesProtocol {
 }
 public class CoreDataServices<Entity: NSManagedObject>: CoreDataServicesProtocol {
     private let context: NSManagedObjectContext
-
-    public init(context: NSManagedObjectContext) {
-        self.context = context
+    private let provider: CoreDataProvider
+    
+    public init(provider: CoreDataProvider) {
+        self.context = provider.viewContext
+        self.provider = provider
     }
 
     public func create(_ object: Entity) throws {

@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
-
+import CoreData
 struct ProductsView: View {
     @StateObject private var viewModel: ProductsViewModel
     var columns: [GridItem] = Array(repeating: .init(.flexible(), spacing: 8), count: 2)
-    
+//    @Environment(\.managedObjectContext) var context
     private var content: some View{
         VStack{
             SearchBarView(text: $viewModel.searchProductName)

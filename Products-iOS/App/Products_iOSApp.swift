@@ -10,11 +10,11 @@ import PersistentLayer
 
 @main
 struct Products_iOSApp: App {
-    private let persistentController = CoreDataProvider.shared
+//    private let persistentController = CoreDataProvider.shared
     var body: some Scene {
         WindowGroup {
             ProductsView()
-                .environment(\.managedObjectContext, persistentController.viewContext)
+//                .environment(\.managedObjectContext, persistentController.viewContext)
         }
     }
 }
